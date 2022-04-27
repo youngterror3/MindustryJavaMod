@@ -19,7 +19,7 @@ dependencies {
 }
 
 jar {
-    archiveFileName.set pArtifactFilename
+    archiveFileName.set dexify-pArtifactFilename
 }
 
 task dexify(type: Jar) {
