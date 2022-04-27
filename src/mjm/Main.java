@@ -9,7 +9,7 @@ import static mindustry.Vars.*;
 public class Main extends Mod{
     public final ContentList[] mjmContent = {
 		new MjmBlocks(),
-		new MjmTechTree();
+		new MjmTechTree()
 	};
 
     @Override
