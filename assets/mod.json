@@ -1,0 +1,12 @@
+{
+  "name": "MindustryJavaMod",
+  "displayName": "Mindustry Java mod",
+  "author": "youngterror3",
+  "description": "Adds new features.",
+  "version": "0.1",
+  "main": "mjm.Main",
+  "minGameVersion": "105",
+  "dependencies": [],
+  "hidden": false,
+  "java": true
+}
