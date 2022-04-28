@@ -19,6 +19,11 @@ import mindustry.world.blocks.logic.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.meta.*;
 
+import mjm.world.blocks.*;
+import mjm.world.draw.*;
+
+import static mindustry.content.Items.*;
+import static mindustry.content.Liquids.*;
 import static mindustry.type.ItemStack.with;
 
 public class MjmBlocks implements ContentList {
@@ -31,7 +36,12 @@ public class MjmBlocks implements ContentList {
 
     //defense
     hugeCopperWall, giganticCopperWall, hugeTitaniumWall, giganticTitaniumWall, hugePlastaniumWall, giganticPlastaniumWall,
-    hugeThoriumWall, giganticThoriumWall, hugePhaseWall, giganticPhaseWall, hugeSurgeWall, giganticSurgeWall;
+    hugeThoriumWall, giganticThoriumWall, hugePhaseWall, giganticPhaseWall, hugeSurgeWall, giganticSurgeWall,
+	
+	
+	//crafting
+	furnace;
+	
 	
 	
 	
@@ -121,6 +131,22 @@ public class MjmBlocks implements ContentList {
             size = 4;
             lightningChance = 0.09f;
         }};
+		
+		//crafting
+		furnace = new AttributeCrafter("furnace"){{
+            requirements(Category.crafting, with(titanium, 120, metaglass, 80, plastanium, 35, graphite, 200));
+            outputItem = new ItemStack(metaglass, 8);
+            craftTime = 65f;
+            size = 3;
+            itemCapacity = 30;
+            boostScale = 0.15f;
+            drawer = new DrawSmelter();
+            craftEffect = Fx.smeltsmoke;
+
+            consumes.items(with(sand, 3, lead, 3, pyratite, 1));
+            consumes.power(5f);
+        }};
+        
 		
     }
 }
