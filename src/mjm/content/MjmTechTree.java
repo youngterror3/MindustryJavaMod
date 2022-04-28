@@ -23,6 +23,36 @@ public class MjmTechTree implements ContentList{
             });
         });
 		
+		mergeNode(titaniumWallLarge, () -> {
+            node(hugeTitaniumWall, () -> {
+                node(giganticTitaniumWall);
+            });
+        });
+		
+		mergeNode(plastaniumWallLarge, () -> {
+            node(hugePlastaniumWall, () -> {
+                node(giganticPlastaniumWall);
+            });
+        });
+
+        mergeNode(thoriumWallLarge, () -> {
+            node(hugeThoriumWall, () -> {
+                node(giganticThoriumWall);
+            });
+        });
+
+        mergeNode(phaseWallLarge, () -> {
+            node(hugePhaseWall, () -> {
+                node(giganticPhaseWall);
+            });
+        });
+
+        mergeNode(surgeWallLarge, () -> {
+            node(hugeSurgeWall, () -> {
+                node(giganticSurgeWall);
+            });
+        });
+        
 		   
     }
     private static void mergeNode(UnlockableContent parent, Runnable children){
