@@ -54,7 +54,7 @@ public class MjmTechTree implements ContentList{
         });
         
 	mergeNode(kiln, () -> {
-		node(MjmBlocks.furnace, Seq.with(new Research(Items.plastanium)));
+		node(furnace, Seq.with(new Research(Items.metaglass), (Items.plastanium), (Items.titanium), (Items.graphite));
         });
 		   
     }
