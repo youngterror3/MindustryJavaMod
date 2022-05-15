@@ -83,7 +83,7 @@ public class MjmTechTree implements ContentList{
 
 	
     private static void node(UnlockableContent content, Runnable children){
-        node(content, content.researchRequirements());
+        node(content, content.researchRequirements(), children);
     }
 
     private static void node(UnlockableContent block){
