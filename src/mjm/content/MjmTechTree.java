@@ -81,9 +81,6 @@ public class MjmTechTree implements ContentList{
         node(content, content.researchRequirements(), objectives, children);
     }
 
-    private static void node(UnlockableContent content, Runnable children){
-        node(content, content.researchRequirements(), children);
-    }
 	
     private static void node(UnlockableContent content, Runnable children){
         node(content, content.researchRequirements());
