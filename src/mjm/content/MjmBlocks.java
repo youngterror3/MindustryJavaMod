@@ -131,6 +131,7 @@ public class MjmBlocks implements ContentList {
             size = 4;
             lightningChance = 0.09f;
         }};
+
         
         //crafting
         furnace = new GenericSmelter("furnace"){{
