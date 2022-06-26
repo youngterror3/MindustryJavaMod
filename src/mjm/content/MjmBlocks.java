@@ -142,7 +142,6 @@ public class MjmBlocks implements ContentList {
             size = 3;
             itemCapacity = 30;
             boostScale = 0.15f;
-            drawer = new DrawSmelter();
             craftEffect = Fx.smeltsmoke;
 
             consumes.items(with(sand, 3, lead, 3, pyratite, 1));
@@ -156,8 +155,6 @@ public class MjmBlocks implements ContentList {
             itemCapacity = 50;
             liquidCapacity = 150f;
             boostScale = 0.1f;
-            drawer = new DrawGlow();
-            ((DrawGlow)drawer).glowAmount = 1.5f;
             attribute = Attribute.oil;
             craftEffect = Fx.formsmoke;
             updateEffect = Fx.plasticburn;
@@ -172,7 +169,6 @@ public class MjmBlocks implements ContentList {
             craftTime = 60f;
             size = 3;
             itemCapacity = 30;
-            drawer = new DrawWeave();
             craftEffect = Fx.smeltsmoke;
 
             consumes.items(with(thorium, 6, sand, 10, silicon, 3));
@@ -185,7 +181,6 @@ public class MjmBlocks implements ContentList {
             size = 4;
             itemCapacity = 40;
             boostScale = 0.1f;
-            drawer = new DrawCrucible();
             craftEffect = Fx.smeltsmoke;
 
             consumes.items(with(copper, 8, lead, 8, titanium, 5, silicon, 7, pyratite, 1));
@@ -198,8 +193,6 @@ public class MjmBlocks implements ContentList {
             craftTime = 80f;
             size = 3;
             itemCapacity = 30;
-            drawer = new DrawSpinner();
-            ((DrawSpinner)drawer).spinSpeed = 1.5f;
 
             consumes.power(1f);
             consumes.liquid(oil, 0.05f);
@@ -211,8 +204,6 @@ public class MjmBlocks implements ContentList {
             craftTime = 80f;
             size = 3;
             itemCapacity = 30;
-            drawer = new DrawSpinner();
-            ((DrawSpinner)drawer).spinSpeed = 1f;
 
             consumes.items(with(pyratite, 6, sporePod, 5));
             consumes.liquid(oil, 0.05f);
@@ -225,9 +216,6 @@ public class MjmBlocks implements ContentList {
             size = 3;
             itemCapacity = 30;
             liquidCapacity = 150;
-            drawer = new DrawLiquidSpinner();
-            ((DrawLiquidSpinner)drawer).spinSpeed = 5f;
-
             consumes.power(1.5f);
             consumes.liquid(water, 1f);
             consumes.items(with(titanium, 2, silicon, 1));
@@ -253,7 +241,6 @@ public class MjmBlocks implements ContentList {
             itemCapacity = 30;
             liquidCapacity = 120;
             hasLiquids = true;
-            drawer = new DrawAnimation();
 
             consumes.power(5);
             consumes.item(sporePod, 4);
@@ -265,7 +252,6 @@ public class MjmBlocks implements ContentList {
             size = 2;
             itemCapacity = 20;
             liquidCapacity = 50;
-            drawer = new DrawRotator();
             craftEffect = Fx.pulverize;
             updateEffect = Fx.pulverizeMedium;
             updateEffectChance = 0.05f;
