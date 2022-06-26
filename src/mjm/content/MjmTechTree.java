@@ -53,10 +53,66 @@ public class MjmTechTree implements ContentList{
             });
         });
         
-	mergeNode(kiln, () -> {
-		node(furnace);
+    mergeNode(kiln, () -> {
+        node(furnace);
         });
-		   
+
+    mergeNode(plastaniumCompressor, () -> {
+        node(plastaniumCompressor);
+        });
+
+    mergeNode(phaseWeaver, () -> {
+        node(phaseSpinner);
+        });
+
+    mergeNode(surgeSmelter, () -> {
+        node(alloyCrucible);
+        });
+
+    mergeNode(pyratiteMixer, () -> {
+        node(pyratiteBlender);
+        });
+
+    mergeNode(blastMixer, () -> {
+        node(blastBlender);
+        });
+
+    mergeNode(cryofluidMixer, () -> {
+        node(cryofluidBlender);
+        });
+
+    mergeNode(kiln, () -> {
+        node(liquefier);
+        });
+
+    mergeNode(melter, () -> {
+        node(furnace);
+        });
+
+    mergeNode(sporePress, () -> {
+        node(sporeCompactor);
+        });
+
+    mergeNode(pulverizer, () -> {
+        node(crusher);
+        });
+
+    mergeNode(coalCentrifuge, () -> {
+        node(coalSynthesizer);
+        });
+
+    mergeNode(waterExtractor, () -> {
+        node(waterExtorter);
+        });
+
+    mergeNode(cultivator, () -> {
+        node(nurturer);
+        });
+
+    mergeNode(oilExtractor, () -> {
+        node(oilExtorter);
+        });
+
     }
     private static void mergeNode(UnlockableContent parent, Runnable children){
         context = TechTree.all.find(t -> t.content == parent);
