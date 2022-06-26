@@ -29,14 +29,15 @@ public class MjmBlocks implements ContentList {
 	
 	
 	
-	//sandbox
+    //sandbox
 
     //defense
     hugeCopperWall, giganticCopperWall, hugeTitaniumWall, giganticTitaniumWall, hugePlastaniumWall, giganticPlastaniumWall,
     hugeThoriumWall, giganticThoriumWall, hugePhaseWall, giganticPhaseWall, hugeSurgeWall, giganticSurgeWall,
 	
 	
-	//crafting
+    //crafting
+
     furnace, plastaniumCondenser, phaseSpinner, alloyCrucible, pyratiteBlender, blastBlender, cryofluidBlender, 
     liquefier, sporeCompactor, crusher, coalSynthesizer, 
     waterExtorter, nurturer, oilExtorter;
@@ -133,6 +134,7 @@ public class MjmBlocks implements ContentList {
         
         //crafting
         furnace = new GenericSmelter("furnace"){{
+
             requirements(Category.crafting, with(titanium, 120, metaglass, 80, plastanium, 35, graphite, 200));
             outputItem = new ItemStack(metaglass, 8);
             craftTime = 65f;
@@ -325,6 +327,7 @@ public class MjmBlocks implements ContentList {
             consumes.power(10f);
             consumes.liquid(water, 0.4f);
         }};
+
 
 
 
