@@ -153,7 +153,6 @@ public class MjmBlocks implements ContentList {
             size = 3;
             itemCapacity = 50;
             liquidCapacity = 150f;
-            attribute = Attribute.oil;
             craftEffect = Fx.formsmoke;
             updateEffect = Fx.plasticburn;
 
