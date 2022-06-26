@@ -141,7 +141,6 @@ public class MjmBlocks implements ContentList {
             craftTime = 65f;
             size = 3;
             itemCapacity = 30;
-            boostScale = 0.15f;
             craftEffect = Fx.smeltsmoke;
 
             consumes.items(with(sand, 3, lead, 3, pyratite, 1));
@@ -154,7 +153,6 @@ public class MjmBlocks implements ContentList {
             size = 3;
             itemCapacity = 50;
             liquidCapacity = 150f;
-            boostScale = 0.1f;
             attribute = Attribute.oil;
             craftEffect = Fx.formsmoke;
             updateEffect = Fx.plasticburn;
@@ -180,7 +178,6 @@ public class MjmBlocks implements ContentList {
             craftTime = 100f;
             size = 4;
             itemCapacity = 40;
-            boostScale = 0.1f;
             craftEffect = Fx.smeltsmoke;
 
             consumes.items(with(copper, 8, lead, 8, titanium, 5, silicon, 7, pyratite, 1));
